@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Well To Customer Information</h1>
+    <ul>
+     {% for form in form %}
+        <li>Hotel Booking:{{form.User}}</li>
+        <li>Membership_type:{{data}} </li>
+        <li>Check_In:{{form.Check_In}}</li>
+        <li>Check_Out:{{form.Check_Out}}</li>
+        <li>Room Booking:{{form.Booking_id}}</li>
+        <li>Room_Type:{{form.Room_type}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
