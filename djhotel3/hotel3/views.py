@@ -9,6 +9,7 @@ from django.db.models import Q
 
 def reg(request):
     if request.method=='POST':
+        print("test")
         n=''
         for i in range(0,4):
             n=n+str(randint(0,9))
